@@ -24,7 +24,6 @@ echo -e "\033[1;32m______ _           _____ _____
 +  \033[0;37mHostname \033[0;35m= \033[1;32m`hostname`
 \033[0;35m+   \033[0;37mAddress \033[0;35m= \033[1;32m`/sbin/ifconfig|grep inet|head -1|sed 's/\:/ /'|awk '{print $3}'`
 \033[0;35m+    \033[0;37mKernel \033[0;35m= \033[1;32m`uname -r`
-\033[0;35m+    \033[0;37mUptime \033[0;35m=\033[1;32m`uptime | sed 's/.*up ([^,]*), .*/1/'`
 \033[0;35m+       \033[0;37mCPU \033[0;35m= \033[1;32m4x Intel(R) Xeon(R) E5620 @ 2.40GHz
 \033[0;35m+    \033[0;37mMemory \033[0;35m= \033[1;32m`cat /proc/meminfo | grep MemTotal | awk {'print $2 / 1000'}` mB
 \033[0;35m++++++++++++++++++: \033[0;37mUser Data\033[0;35m :++++++++++++++++++++
